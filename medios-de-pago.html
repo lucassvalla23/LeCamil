@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medios de Pago - LeCamil</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="pages.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="desktop.css">
+    <link rel="stylesheet" href="tablet.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo-container">
+                    <img src="/le camil.jpeg" alt="LeCamil Logo" class="logo">
+                    <h1 class="brand-name">LeCamil</h1>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Inicio</a></li>
+                        <li class="dropdown">
+                            <a href="index.html#productos" class="nav-link dropdown-toggle">Productos <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#box-arte" class="dropdown-link">BOX ARTE Y CREACIÓN</a></li>
+                                <li><a href="#box-escolar" class="dropdown-link">BOX ESCOLAR</a></li>
+                                <li><a href="#box-amigo" class="dropdown-link">BOX AMIGA/O</a></li>
+                                <li><a href="#box-sorpresuki" class="dropdown-link">BOX SORPRESUKI</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="index.html#novedades" class="nav-link">Novedades</a></li>
+                        <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                        <li><a href="medios-de-pago.html" class="nav-link active">Medios de Pago</a></li>
+                    </ul>
+                </div>
+                <div class="nav-icons">
+                    <button class="cart-btn">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="cart-count">0</span>
+                    </button>
+                    <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Payment Methods Section -->
+    <section class="payment-page">
+        <div class="container">
+            <div class="page-header">
+                <h1 class="page-title">Medios de Pago</h1>
+                <p class="page-subtitle">Ofrecemos estas opciones de pago para tu comodidad.</p>
+            </div>
+
+            <div class="payment-methods-simple">
+                <div class="payment-card-large">
+                    <div class="payment-icon">💵</div>
+                    <h3>Efectivo</h3>
+                    <p>Pago en efectivo contra entrega</p>
+                    <div class="payment-details">
+                        <small>• Disponible en entregas locales<br>• Sin cargos adicionales</small>
+                    </div>
+                </div>
+                
+                <div class="payment-card-large">
+                    <div class="payment-icon">🏦</div>
+                    <h3>Transferencia Bancaria</h3>
+                    <p>Transferencia directa a nuestra cuenta</p>
+                    <div class="payment-details">
+                        <small>• Procesamiento inmediato<br>• Enviamos datos bancarios por WhatsApp</small>
+                    </div>
+                </div>
+                
+                <div class="payment-card-large">
+                    <div class="payment-icon">💳</div>
+                    <h3>Mercado Pago</h3>
+                    <p>Pago seguro con Mercado Pago</p>
+                    <div class="payment-details">
+                        <small>• Acepta tarjetas de crédito/débito<br>• Pago en cuotas disponible</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="payment-info-section">
+                <h2 class="section-title">Información Importante</h2>
+                <div class="info-cards">
+                    <div class="info-card">
+                        <h3><i class="fas fa-shield-alt"></i> Compra Segura</h3>
+                        <p>Todos nuestros pagos están protegidos. Tu información personal y financiera está segura con nosotros.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3><i class="fas fa-shipping-fast"></i> Envío Rápido</h3>
+                        <p>Procesamos tu pedido en 24-48 horas. Envíos gratis en compras superiores a $50.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3><i class="fas fa-undo"></i> Política de Devolución</h3>
+                        <p>Tienes 15 días para devolver productos en perfecto estado. Consulta nuestros términos.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3><i class="fas fa-headset"></i> Soporte 24/7</h3>
+                        <p>¿Tienes dudas sobre tu compra? Contáctanos por WhatsApp y te ayudamos al instante.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeCamil - Tienda de Utilidades</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="pages.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="desktop.css">
+    <link rel="stylesheet" href="tablet.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="cart-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Component -->
+    <div id="header-container"></div>
+
+    <!-- Hero Component -->
+    <div id="hero-container"></div>
+
+    <!-- Productos Destacados -->
+    <section class="featured-products" id="productos">
+        <div class="container">
+            <h2 class="section-title">Productos Destacados</h2>
+            <div class="products-grid" id="featured-products">
+                <!-- Products will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- BOX Categories Container -->
+    <div id="box-categories-container">
+        <!-- BOX sections will be loaded dynamically -->
+    </div>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Sobre LeCamil</h2>
+                    <p class="about-description">En LeCamil, nos especializamos en crear y curar productos únicos que combinan funcionalidad con belleza. Cada artículo en nuestra tienda está seleccionado cuidadosamente para brindarte la mejor experiencia.</p>
+                    <p class="about-description">Nuestra pasión por los productos hechos a mano y las utilidades especiales nos impulsa a ofrecer solo lo mejor para nuestros clientes.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <span>Hecho con Amor</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shipping-fast"></i>
+                            <span>Envío Rápido</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-star"></i>
+                            <span>Calidad Premium</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="/WhatsApp Image 2025-06-21 at 19.29.23.jpeg" alt="LeCamil Celebration" class="celebration-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2 class="newsletter-title">¡Mantente al día!</h2>
+                <p class="newsletter-description">Suscríbete a nuestro newsletter y recibe las últimas novedades y ofertas especiales.</p>
+                <form class="newsletter-form" id="newsletter-form">
+                    <input type="email" placeholder="Tu email" class="newsletter-input" required>
+                    <button type="submit" class="newsletter-btn">Suscribirme</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Component -->
+    <div id="footer-container"></div>
+
+    <!-- Scripts -->
+    <script src="products.js"></script>
+    <script src="utils.js"></script>
+    <script src="cart.js"></script>
+    <script src="navigation.js"></script>
+    <script src="animations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

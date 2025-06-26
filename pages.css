@@ -1,0 +1,571 @@
+/* Page-specific styles */
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, var(--cream) 0%, var(--light-cream) 100%);
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.hero-text {
+    z-index: 2;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--coral);
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    color: var(--gray);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    color: var(--gray);
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-banner {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px var(--shadow);
+    transform: rotate(-2deg);
+    transition: transform 0.3s ease;
+}
+
+.hero-banner:hover {
+    transform: rotate(0deg) scale(1.05);
+}
+
+.decorative-element {
+    position: absolute;
+    right: -50px;
+    bottom: -50px;
+    opacity: 0.3;
+    z-index: 1;
+}
+
+.floating-cactus {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+}
+
+/* Products Section */
+.featured-products {
+    padding: 80px 0;
+    background: var(--white);
+}
+
+/* About Section */
+.about-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, var(--light-cream) 0%, var(--cream) 100%);
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-description {
+    font-size: 1.1rem;
+    color: var(--gray);
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+.about-features {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px var(--shadow);
+}
+
+.feature i {
+    color: var(--coral);
+    font-size: 1.5rem;
+}
+
+.feature span {
+    font-weight: 600;
+    color: var(--dark-gray);
+}
+
+.celebration-image {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px var(--shadow);
+}
+
+/* Newsletter Section */
+.newsletter-section {
+    padding: 60px 0;
+    background: var(--coral);
+    color: var(--white);
+}
+
+.newsletter-content {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.newsletter-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.newsletter-description {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+/* Contact and Payment Pages */
+.contact-page, .payment-page {
+    padding: 100px 0 80px;
+    background: linear-gradient(135deg, var(--light-cream) 0%, var(--cream) 100%);
+    min-height: 100vh;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.page-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--coral);
+    margin-bottom: 1rem;
+}
+
+.page-subtitle {
+    font-size: 1.3rem;
+    color: var(--gray);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin-bottom: 4rem;
+}
+
+.contact-card h3, .payment-card h3 {
+    font-size: 1.3rem;
+    color: var(--dark-gray);
+    margin-bottom: 1rem;
+}
+
+.contact-card p, .payment-card p {
+    color: var(--gray);
+    margin-bottom: 0.5rem;
+}
+
+.payment-methods {
+    margin-bottom: 4rem;
+}
+
+.payment-category {
+    margin-bottom: 3rem;
+}
+
+.category-title {
+    font-size: 1.8rem;
+    color: var(--coral);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.social-section {
+    text-align: center;
+}
+
+.social-section h2 {
+    color: var(--coral);
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+/* BOX Categories */
+.box-categories {
+    padding: 60px 0;
+    background: var(--white);
+}
+
+.box-categories:nth-child(even) {
+    background: linear-gradient(135deg, var(--light-cream) 0%, var(--cream) 100%);
+}
+
+.category-description {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--gray);
+    margin-bottom: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Payment Page Enhancements */
+.payment-details {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--light-cream);
+}
+
+.payment-details small {
+    color: var(--gray);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.payment-info-section {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.info-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* Payment Methods Simple */
+.payment-methods-simple {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.payment-card-large {
+    background: var(--white);
+    padding: 3rem 2rem;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 10px 30px var(--shadow);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.payment-card-large:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px var(--shadow-hover);
+    border-color: var(--primary-pink);
+}
+
+.payment-icon {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+.payment-card-large h3 {
+    font-size: 1.5rem;
+    color: var(--coral);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.payment-card-large p {
+    color: var(--gray);
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Modern Contact Page */
+.contact-page-new {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #FFF8DC 0%, #FAF0E6 100%);
+    min-height: 100vh;
+}
+
+.page-header-contact {
+    text-align: center;
+    margin-bottom: 4rem;
+    padding: 0 20px;
+}
+
+.page-title-contact {
+    font-size: 3.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--coral), var(--primary-pink));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+}
+
+.page-subtitle-contact {
+    font-size: 1.3rem;
+    color: var(--gray);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contact-info-modern {
+    background: var(--white);
+    padding: 3rem;
+    border-radius: 30px;
+    box-shadow: 0 15px 40px var(--shadow);
+    height: fit-content;
+}
+
+.contact-intro h2 {
+    color: var(--coral);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.contact-intro p {
+    color: var(--gray);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.contact-methods {
+    margin-bottom: 2.5rem;
+}
+
+.contact-method {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--light-cream);
+}
+
+.contact-method:last-child {
+    border-bottom: none;
+}
+
+.method-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--primary-pink), var(--coral));
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.method-icon i {
+    color: var(--white);
+    font-size: 1.5rem;
+}
+
+.method-info h4 {
+    color: var(--dark-gray);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.method-info p {
+    color: var(--gray);
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.social-section-modern h3 {
+    color: var(--coral);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.social-links-modern {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-btn {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, var(--primary-pink), var(--coral));
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    color: var(--white);
+}
+
+.social-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 127, 127, 0.4);
+}
+
+.contact-form-modern {
+    background: var(--white);
+    padding: 3rem;
+    border-radius: 30px;
+    box-shadow: 0 15px 40px var(--shadow);
+    height: fit-content;
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form-header h3 {
+    color: var(--coral);
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.form-header p {
+    color: var(--gray);
+    font-size: 1rem;
+}
+
+.modern-form .form-row {
+    margin-bottom: 1.5rem;
+}
+
+.form-field {
+    position: relative;
+}
+
+.form-field input,
+.form-field textarea,
+.form-field select {
+    width: 100%;
+    padding: 1rem 1.2rem;
+    border: 2px solid var(--light-cream);
+    border-radius: 15px;
+    font-size: 1rem;
+    background: var(--white);
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.form-field input:focus,
+.form-field textarea:focus,
+.form-field select:focus {
+    border-color: var(--primary-pink);
+    box-shadow: 0 0 0 3px rgba(255, 182, 193, 0.1);
+}
+
+.form-field label {
+    position: absolute;
+    left: 1.2rem;
+    top: 1rem;
+    color: var(--gray);
+    transition: all 0.3s ease;
+    pointer-events: none;
+    background: var(--white);
+    padding: 0 0.5rem;
+}
+
+.form-field input:focus + label,
+.form-field textarea:focus + label,
+.form-field input:not(:placeholder-shown) + label,
+.form-field textarea:not(:placeholder-shown) + label {
+    top: -0.5rem;
+    left: 1rem;
+    font-size: 0.85rem;
+    color: var(--primary-pink);
+    font-weight: 600;
+}
+
+.form-field select + label {
+    top: -0.5rem;
+    left: 1rem;
+    font-size: 0.85rem;
+    color: var(--primary-pink);
+    font-weight: 600;
+}
+
+.submit-btn-modern {
+    width: 100%;
+    background: linear-gradient(135deg, var(--primary-pink), var(--coral));
+    color: var(--white);
+    border: none;
+    padding: 1.2rem 2rem;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    margin-top: 1rem;
+}
+
+.submit-btn-modern:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(255, 127, 127, 0.4);
+}

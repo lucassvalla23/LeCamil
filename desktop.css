@@ -1,0 +1,19 @@
+/* Desktop styles - 1025px and up */
+
+/* Large screens and desktops */
+@media (max-width: 1200px) and (min-width: 1025px) {
+    .container {
+        max-width: 100%;
+        padding: 0 30px;
+    }
+    
+    .hero-content {
+        gap: 40px;
+    }
+    
+    .products-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+}
+

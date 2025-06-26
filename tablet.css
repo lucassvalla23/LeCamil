@@ -1,0 +1,88 @@
+/* Tablet styles - 769px to 1024px */
+
+/* Tablet styles */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .container {
+        padding: 0 20px;
+    }
+    
+    .nav-container {
+        padding: 0 20px;
+    }
+    
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+        padding: 0 20px;
+    }
+    
+    .hero-title {
+        font-size: 2.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.4rem;
+    }
+    
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+    
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .contact-info-modern,
+    .contact-form-modern {
+        padding: 2.5rem;
+    }
+    
+    .payment-methods-simple {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        text-align: center;
+    }
+    
+    .add-to-cart-btn {
+        padding: 12px 20px;
+        font-size: 0.85rem;
+        gap: 6px;
+        border-radius: 22px;
+        min-height: 46px;
+        font-weight: 700;
+        width: auto;
+        min-width: fit-content;
+        max-width: 90%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        white-space: nowrap;
+        box-sizing: border-box;
+    }
+    
+    .add-to-cart-btn i {
+        font-size: 0.9rem;
+        flex-shrink: 0;
+    }
+    
+    .add-to-cart-btn span {
+        font-size: 0.85rem;
+        font-weight: 700;
+        line-height: 1;
+    }
+}

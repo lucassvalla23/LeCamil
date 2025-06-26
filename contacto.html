@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - LeCamil</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="pages.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="desktop.css">
+    <link rel="stylesheet" href="tablet.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo-container">
+                    <img src="/le camil.jpeg" alt="LeCamil Logo" class="logo">
+                    <h1 class="brand-name">LeCamil</h1>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Inicio</a></li>
+                        <li class="dropdown">
+                            <a href="index.html#productos" class="nav-link dropdown-toggle">Productos <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#box-arte" class="dropdown-link">BOX ARTE Y CREACIÓN</a></li>
+                                <li><a href="#box-escolar" class="dropdown-link">BOX ESCOLAR</a></li>
+                                <li><a href="#box-amigo" class="dropdown-link">BOX AMIGA/O</a></li>
+                                <li><a href="#box-sorpresuki" class="dropdown-link">BOX SORPRESUKI</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="index.html#novedades" class="nav-link">Novedades</a></li>
+                        <li><a href="contacto.html" class="nav-link active">Contacto</a></li>
+                        <li><a href="medios-de-pago.html" class="nav-link">Medios de Pago</a></li>
+                    </ul>
+                </div>
+                <div class="nav-icons">
+                    <button class="cart-btn">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="cart-count">0</span>
+                    </button>
+                    <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact-page-new">
+        <div class="container">
+            <div class="page-header-contact">
+                <h1 class="page-title-contact">¡Hablemos!</h1>
+                <p class="page-subtitle-contact">Estamos aquí para ayudarte con cualquier consulta que tengas sobre nuestros productos.</p>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-info-modern">
+                    <div class="contact-intro">
+                        <h2>Ponte en contacto</h2>
+                        <p>Nos encanta escuchar de nuestros clientes. Escríbenos y te responderemos lo antes posible.</p>
+                    </div>
+
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-info">
+                                <h4>Email</h4>
+                                <p>info@lecamil.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="method-info">
+                                <h4>WhatsApp</h4>
+                                <p>+1 (555) 987-6543</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="method-info">
+                                <h4>Ubicación</h4>
+                                <p>Tu dirección aquí</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="method-info">
+                                <h4>Horarios</h4>
+                                <p>Lun - Vie: 9AM - 6PM<br>Sáb: 10AM - 4PM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-section-modern">
+                        <h3>Síguenos</h3>
+                        <div class="social-links-modern">
+                            <a href="#" class="social-btn">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-btn">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#" class="social-btn">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                            <a href="#" class="social-btn">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-modern">
+                    <div class="form-header">
+                        <h3>Envíanos un mensaje</h3>
+                        <p>Completa el formulario y nos pondremos en contacto contigo pronto.</p>
+                    </div>
+                    
+                    <form class="modern-form" id="contact-form">
+                        <div class="form-row">
+                            <div class="form-field">
+                                <input type="text" id="name" name="name" required placeholder=" ">
+                                <label for="name">Nombre completo</label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-field">
+                                <input type="email" id="email" name="email" required placeholder=" ">
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-field">
+                                <input type="tel" id="phone" name="phone" placeholder=" ">
+                                <label for="phone">Teléfono (opcional)</label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-field">
+                                <select id="subject" name="subject" required>
+                                    <option value="">Selecciona un asunto</option>
+                                    <option value="consulta">Consulta general</option>
+                                    <option value="pedido">Consulta sobre pedido</option>
+                                    <option value="producto">Pregunta sobre producto</option>
+                                    <option value="colaboracion">Colaboración</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                                <label for="subject">Asunto</label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-field">
+                                <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+                                <label for="message">Mensaje</label>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn-modern">
+                            <span>Enviar Mensaje</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
