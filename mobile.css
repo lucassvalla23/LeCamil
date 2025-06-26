@@ -941,3 +941,15 @@
         max-height: calc(100vh - 70px);
     }
 }
+.add-to-cart {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  background-color: #f01826;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+}
