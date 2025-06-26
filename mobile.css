@@ -944,12 +944,51 @@
 .add-to-cart {
   display: block;
   width: 100%;
-  padding: 10px;
-  margin-top: 10px;
-  font-size: 16px;
+  padding: 12px 16px;
+  margin-top: 12px;
+  font-size: 18px;
   background-color: #f01826;
   color: white;
   border: none;
   border-radius: 8px;
   text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background-color: #c91520;
+}
+.navbar {
+  flex-direction: column;
+}
+
+.nav-menu {
+  width: 100%;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dropdown-menu {
+  display: none;
+  flex-direction: column;
+  padding-left: 16px;
+  background-color: #fff;
+  border-radius: 6px;
+  margin-top: 4px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.dropdown.open .dropdown-menu {
+  display: flex;
+}
+
+.dropdown-link {
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+  text-decoration: none;
 }
